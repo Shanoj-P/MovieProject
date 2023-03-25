@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+<div align="center">
+  <form method="post">
+  {% csrf_token %}
+  are you sure?<br>
+  <br><input type="submit" value="yes" class="btn btn-primary">
+</form>
+</div>
+
+{% endblock %}
